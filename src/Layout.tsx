@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import { Header } from './Header'
 import { pathPrefix } from '../gatsby-config'
 import { Layout } from 'antd'
-import { Sidebar } from './sidebar'
+import { Sidebar } from './sidebar/index'
 import { TableOfContents } from './TableOfContents'
 
 const { Sider, Content } = Layout

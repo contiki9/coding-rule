@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Ant-Design Documentation Starter',
+    title: 'Web制作ガイドライン',
   },
   plugins: [
     `gatsby-plugin-typescript`,
@@ -51,8 +51,8 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [ `gatsby-remark-images` ],
-      }
+        plugins: [`gatsby-remark-images`],
+      },
     },
     {
       resolve: `gatsby-plugin-mdx`,

@@ -11,10 +11,10 @@ export class Header extends Component<Props> {
   render() {
     const { siteTitle } = this.props
     return (
-      <Row>
+      <>
         <Menu mode="horizontal">
           <Menu.Item>
-            <Link to="/docs/get-started/introduction/">{siteTitle}</Link>
+            <Link to="/">{siteTitle}</Link>
           </Menu.Item>
           <Menu.Item>
             <a
@@ -32,7 +32,7 @@ export class Header extends Component<Props> {
             </a>
           </Menu.Item>
         </Menu>
-      </Row>
+      </>
     )
   }
 }
