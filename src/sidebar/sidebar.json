@@ -12,22 +12,40 @@
     "link": "",
     "items": [
       { "name": "ディレクトリ", "link": "/guide/directory" },
-      { "name": "Contents", "link": "/docs/guide/contents" },
-      { "name": "Menu Items", "link": "/docs/guide/menu_items" },
-      { "name": "Sidebar", "link": "/docs/guide/sidebar" }
+      { "name": "画像", "link": "/guide/images" },
+      { "name": "css", "link": "/guide/css" },
+      { "name": "JavaScript", "link": "/guide/js" },
+      {
+        "name": "css / JavaScript共通",
+        "link": "/guide/code-common"
+      }
     ]
   },
   {
-    "name": "Lorem Ipsum",
+    "name": "Git",
     "link": "",
     "items": [
       {
-        "name": "Ipsum",
-        "link": "/docs/lorem-ipsum/Ipsum"
+        "name": "ワークフロー",
+        "link": "/review/design"
       },
       {
-        "name": "Lorem",
-        "link": "/docs/lorem-ipsum/Lorem"
+        "name": "メッセージ",
+        "link": "/review/code"
+      }
+    ]
+  },
+  {
+    "name": "レビュー",
+    "link": "",
+    "items": [
+      {
+        "name": "デザイン",
+        "link": "/review/design"
+      },
+      {
+        "name": "コード",
+        "link": "/review/code"
       }
     ]
   }

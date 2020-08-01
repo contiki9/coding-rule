@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Web制作ガイドライン',
+    title: '開発ガイドライン',
   },
   plugins: [
     `gatsby-plugin-typescript`,

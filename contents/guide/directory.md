@@ -3,12 +3,12 @@
 
 <h3>ページ関連</h3>
 
-- `pages`の中に入れる
+- `scr/pages`の中に入れる ※デプロイ方法がややこしくなる場合はこの限りではない
 - `category.html`などではなく、`category/index.html`のようになるべく `index.html` とする
 
 <h3>画像、CSS、JavaScript、Font関連</h3>
 
-- `scr`または`assets`の中で管理する。
+- `scr/assets`の中で管理する。
 - ↑ の直下には`images`,`css`,`js`,`font`のフォルダに分けて管理します。
   - ※`css`としているが`scss`なども格納されます。`scss`,`sass`などで命名に迷いが出るのを避けるため`css`とします。
 
