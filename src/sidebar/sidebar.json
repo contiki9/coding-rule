@@ -8,10 +8,6 @@
     "link": "",
     "items": [
       {
-        "name": "ディレクトリ",
-        "link": "/develop/tools"
-      },
-      {
         "name": "対応ブラウザ",
         "link": "/develop/browser"
       },
@@ -28,11 +24,7 @@
       { "name": "ディレクトリ", "link": "/guide/directory" },
       { "name": "画像", "link": "/guide/images" },
       { "name": "css", "link": "/guide/css" },
-      { "name": "JavaScript", "link": "/guide/js" },
-      {
-        "name": "css / JavaScript共通",
-        "link": "/guide/code-common"
-      }
+      { "name": "JavaScript", "link": "/guide/js" }
     ]
   },
 
