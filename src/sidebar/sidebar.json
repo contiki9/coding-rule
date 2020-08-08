@@ -34,11 +34,11 @@
     "items": [
       {
         "name": "ワークフロー",
-        "link": "/review/design"
+        "link": "/git/work-flow"
       },
       {
-        "name": "メッセージ",
-        "link": "/review/code"
+        "name": "コメント",
+        "link": "/git/comment"
       }
     ]
   },
