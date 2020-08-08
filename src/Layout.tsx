@@ -1,13 +1,14 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
-import { Header } from './Header'
-import { pathPrefix } from '../gatsby-config'
-import { Layout } from 'antd'
-import { Sidebar } from './sidebar/index'
-import { TableOfContents } from './TableOfContents'
+import React from 'react';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
+import { Header } from './Header';
+import { pathPrefix } from '../gatsby-config';
+import { Layout } from 'antd';
+import { Sidebar } from './sidebar/index';
+import { TableOfContents } from './TableOfContents';
 
-const { Sider, Content } = Layout
+import './assets/css/style.scss';
+const { Sider, Content } = Layout;
 
 export function RootLayout({ children }: React.PropsWithChildren<{}>) {
   return (
@@ -33,24 +34,24 @@ export function RootLayout({ children }: React.PropsWithChildren<{}>) {
       render={(data) => {
         const allPosts = data.allMdx.edges.map(
           (edge: any) => edge.node.fields.slug
-        )
-        let onPostPage
+        );
+        let onPostPage;
         if (typeof window !== 'undefined') {
           const path = window.location.pathname.replace(
             pathPrefix.slice(0, -1),
             ''
-          )
+          );
           if (
             allPosts.indexOf(path) >= 0 ||
             allPosts.indexOf(path.slice(0, -1)) >= 0
           ) {
-            onPostPage = true
+            onPostPage = true;
           } else {
-            onPostPage = false
+            onPostPage = false;
           }
         }
 
-        const { title } = data.site.siteMetadata
+        const { title } = data.site.siteMetadata;
 
         return (
           <div style={{ width: '100%', padding: 0, overflow: 'hidden' }}>
@@ -93,10 +94,10 @@ export function RootLayout({ children }: React.PropsWithChildren<{}>) {
               />
             </Layout>
           </div>
-        )
+        );
       }}
     />
-  )
+  );
 }
 
-export default RootLayout
+export default RootLayout;

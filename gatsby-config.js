@@ -5,6 +5,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -91,4 +92,4 @@ module.exports = {
   ],
   /// this must match the path your webpage is displayed from
   pathPrefix: process.env.NODE_ENV === 'development' ? '' : '/gatsby-antd-docs',
-}
+};
