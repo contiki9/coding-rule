@@ -14,6 +14,10 @@
       {
         "name": "フォーマッター",
         "link": "/develop/formatter"
+      },
+      {
+        "name": "ツール",
+        "link": "/develop/tools"
       }
     ]
   },
