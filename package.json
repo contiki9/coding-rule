@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-antd-docs",
+  "name": "coding-rule",
   "description": "Gatsby Antd Docs Starter",
-  "version": "0.2.0",
-  "author": "Jannik Buschke",
+  "version": "0.1.0",
+  "author": "contiki9",
   "dependencies": {
     "@mdx-js/mdx": "1.6.1",
     "@mdx-js/react": "1.6.1",
@@ -68,6 +68,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jannikbuschke/gatsby-antd-docs"
+    "url": "https://github.com/contiki9/coding-rule"
   }
 }
