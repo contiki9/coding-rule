@@ -32,7 +32,7 @@ export class Header extends Component<Props> {
             <Menu mode="horizontal">
               <Menu.Item>
                 <a
-                  href="https://github.com/jannikbuschke/gatsby-antd-docs"
+                  href="https://github.com/contiki9/coding-rule"
                   target="_blank"
                 >
                   <GithubOutlined />
@@ -40,7 +40,7 @@ export class Header extends Component<Props> {
                 </a>
               </Menu.Item>
               <Menu.Item>
-                <a href="https://twitter.com/jannikbuschke" target="_blank">
+                <a href="https://twitter.com/home" target="_blank">
                   <TwitterOutlined />
                   Twitter
                 </a>
