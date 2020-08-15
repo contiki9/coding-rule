@@ -1,6 +1,6 @@
 import { Alert,Space } from 'antd'
 
-<h2>画像のルールについて</h2>
+# 画像のルールについて
 
 <h2>命名の法則</h2>
 

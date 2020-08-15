@@ -54,7 +54,14 @@ export function RootLayout({ children }: React.PropsWithChildren<{}>) {
         const { title } = data.site.siteMetadata;
 
         return (
-          <div style={{ width: '100%', padding: 0, overflow: 'hidden' }}>
+          <div
+            style={{
+              width: '100%',
+              height: '100%',
+              padding: 0,
+              overflow: 'hidden',
+            }}
+          >
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
@@ -74,18 +81,18 @@ export function RootLayout({ children }: React.PropsWithChildren<{}>) {
               }}
             >
               <Sidebar />
-              <Layout>
+              <Layout style={{ height: '100%' }}>
                 <Content
                   style={{
-                    background: '#fff',
-                    padding: 24,
+                    background: '#f8f8f8',
+                    padding: 32,
                     margin: 0,
+                    minHeight: 'calc(100vh - 49px)',
                   }}
                 >
                   {children}
                 </Content>
               </Layout>
-              <TableOfContents />
             </div>
             <Layout>
               <Sider
