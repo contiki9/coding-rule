@@ -12,7 +12,7 @@
 - 自作した mixin は`src/assets/css/config/`の中で`_mixin.scss`を作りまとめる。
   - mixin は接頭語`mx-*`をつける
 - 自作した extend は`src/assets/css/config/`の中で`_extend.scss`を作りまとめる。
-  - mixin は接頭語`ex-*`をつける
+  - extend は接頭語`ex-*`をつける
   - `_extend.scss`の中には元のスタイルを CSS に出さないようにプレイスホルダーセレクタ`%`を利用して書く。
 
 ### その他注意
