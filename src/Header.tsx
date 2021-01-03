@@ -40,7 +40,7 @@ export class Header extends Component<Props> {
                 </a>
               </Menu.Item>
               <Menu.Item>
-                <a href="https://twitter.com/home" target="_blank">
+                <a href="https://twitter.com/maki_saki" target="_blank">
                   <TwitterOutlined />
                   Twitter
                 </a>

@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, StaticQuery, Link } from 'gatsby'
 import { Affix, Menu } from 'antd'
 import 'antd/lib/menu/style/css'
+import styles from './index.module.scss'
 import { pathPrefix } from '../../gatsby-config'
 
 interface LinkItem {
@@ -24,10 +25,11 @@ function isLinkItem(item: MenuItem): item is LinkItem {
   return result
 }
 
+
 function render(item: MenuItem, id: string) {
   if (isLinkItem(item)) {
     return (
-      <Menu.Item key={item.link}>
+      <Menu.Item key={item.link} className={styles.menu_bg}>
         <Link to={item.link}>
           <div>{item.name}</div>
         </Link>
@@ -37,9 +39,10 @@ function render(item: MenuItem, id: string) {
     return (
       <Menu.SubMenu
         key={id}
-        title={<span style={{ fontWeight: 900 }}>{item.name}</span>}
+        title={<span>{item.name}</span>}
+        className={styles.menu_bg}
       >
-        {item.items && item.items.map((v, i) => render(v, id + '.' + i))}
+        {item.items && item.items.map((v, i) => render(v, id + '.' + i))}        
       </Menu.SubMenu>
     )
   }
@@ -74,12 +77,13 @@ export function Sidebar() {
         const defaultOpenKeys = rootItems.map((item) => item.id)
 
         return (
-          <Affix>
+          <Affix className={styles.menu_bg}>
             <Menu
               mode="inline"
               style={{ minWidth: 250, height: '100%', borderRight: 0 }}
               defaultOpenKeys={defaultOpenKeys}
               selectedKeys={[currentPath]}
+              className={styles.menu_bg}
             >
               {rootItems.map((v) => render(v, v.id))}
             </Menu>

@@ -8,6 +8,7 @@ import { Sidebar } from './sidebar/index';
 import { TableOfContents } from './TableOfContents';
 
 import './assets/css/style.scss';
+import styleContent from './assets/css/contents/contents.module.scss';
 const { Sider, Content } = Layout;
 
 export function RootLayout({ children }: React.PropsWithChildren<{}>) {
@@ -83,8 +84,9 @@ export function RootLayout({ children }: React.PropsWithChildren<{}>) {
               <Sidebar />
               <Layout style={{ height: '100%' }}>
                 <Content
+                  className={styleContent}
                   style={{
-                    background: '#f8f8f8',
+                    background: '#FFF',
                     padding: 32,
                     margin: 0,
                     minHeight: 'calc(100vh - 49px)',

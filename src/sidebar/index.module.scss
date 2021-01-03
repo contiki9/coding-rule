@@ -1,0 +1,34 @@
+@import '../assets/css/_variable.scss';
+$_sidebar-bg: $color-bg-xlight;
+$_sidebar-bg-active: darken($color-bg-light, 2);
+$_sidebar-title: $color-text-light;
+.menu_bg {
+  background: $_sidebar-bg;
+  :global {
+    .ant-menu-submenu-title {
+      color: $_sidebar-title;
+    }
+    .ant-menu-item {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+    .ant-menu-submenu {
+      margin-bottom: 0;
+    }
+    .ant-menu-submenu > .ant-menu {
+      background: $_sidebar-bg;
+      .ant-menu-item-only-child {
+        padding-left: 36px !important;
+      }
+    }
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+      background-color: $_sidebar-bg-active;
+    }
+    .ant-menu-vertical .ant-menu-item::after,
+    .ant-menu-vertical-left .ant-menu-item::after,
+    .ant-menu-vertical-right .ant-menu-item::after,
+    .ant-menu-inline .ant-menu-item::after {
+      border: none;
+    }
+  }
+}
