@@ -18,9 +18,6 @@ import { Alert,Space } from 'antd'
     </ul>
   </dd>
 </dl>
-</Space>
-
-<Space direction="vertical" size={16} style={{marginTop:'16px'}}>
 
 <dl class="box-label">
   <dt>画像、CSS、JavaScript、Font関連</dt>
@@ -52,10 +49,6 @@ import { Alert,Space } from 'antd'
     </ul>
   </dd>
 </dl>
-</Space>
-
-<Space direction="vertical" size={16} style={{marginTop:'16px'}}>
-
 <dl class="box-label">
   <dt>CSS（SCSS）の場合</dt>
   <dd>
@@ -70,10 +63,6 @@ import { Alert,Space } from 'antd'
     </ul>
   </dd>
 </dl>
-</Space>
-
-<Space direction="vertical" size={16} style={{marginTop:'16px'}}>
-
 <dl class="box-label">
   <dt>JavaScript</dt>
   <dd>
