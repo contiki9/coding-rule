@@ -23,7 +23,7 @@ export class Header extends Component<Props> {
         >
           <Col>
             <p style={{ fontSize: 16, marginBottom: 0 }}>
-              <Link style={{ color: '#333' }} to="/">
+              <Link style={{ color: '#333',fontWeight:'bold' }} to="/">
                 {siteTitle}
               </Link>
             </p>

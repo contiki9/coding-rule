@@ -1,0 +1,24 @@
+$_menu-bg-active: darken($color-bg-light, 2);
+
+:global {
+  .ant-menu-submenu-title {
+    color: $color-text-light;
+  }
+  .ant-menu-item-selected a,
+  .ant-menu-item-selected a:hover,
+  .ant-menu-item a:hover,
+  .ant-menu-submenu:hover
+    > .ant-menu-submenu-title
+    > .ant-menu-submenu-expand-icon,
+  .ant-menu-submenu:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
+    color: $color-primary;
+  }
+  .ant-menu-horizontal > .ant-menu-item a {
+    color: $color-primary;
+  }
+  .ant-menu-item:active,
+  .ant-menu-submenu-title:active,
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background: $_menu-bg-active;
+  }
+}

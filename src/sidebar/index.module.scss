@@ -6,25 +6,6 @@ $_sidebar-link: $color-primary;
 .menu_bg {
   background: $_sidebar-bg;
   :global {
-    .ant-menu-submenu-title {
-      color: $_sidebar-title;
-    }
-    .ant-menu-item-selected a,
-    .ant-menu-item-selected a:hover,
-    .ant-menu-item a:hover,
-    .ant-menu-submenu:hover
-      > .ant-menu-submenu-title
-      > .ant-menu-submenu-expand-icon,
-    .ant-menu-submenu:hover
-      > .ant-menu-submenu-title
-      > .ant-menu-submenu-arrow {
-      color: $_sidebar-link;
-    }
-    .ant-menu-item:active,
-    .ant-menu-submenu-title:active {
-      background: $_sidebar-bg-active;
-    }
-
     .ant-menu-item {
       margin-top: 0 !important;
       margin-bottom: 0 !important;
@@ -37,9 +18,6 @@ $_sidebar-link: $color-primary;
       .ant-menu-item-only-child {
         padding-left: 36px !important;
       }
-    }
-    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-      background-color: $_sidebar-bg-active;
     }
     .ant-menu-vertical .ant-menu-item::after,
     .ant-menu-vertical-left .ant-menu-item::after,
