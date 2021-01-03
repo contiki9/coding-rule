@@ -1,4 +1,7 @@
-sample: https://www.jannikbuschke.de/gatsby-antd-docs/
+
+# Build Page
+
+https://coding.cntlog.net/
 
 # Getting started
 
@@ -9,7 +12,7 @@ npm run start
 
 Visit `http://localhost:8000`.
 
-Edit files in `/content/docs` and see live updates.
+Edit files in `/content/` and see live updates.
 
 # Hosting
 
@@ -21,12 +24,6 @@ npm run build
 
 and copy the content of the public folder to the webspace.
 
-# License
-
-MIT
-
 # thanks
 
-Forked from https://github.com/cvluca/gatsby-starter-markdown.
-
-This starter is boilerplate for (technical) documentation websites optionally accompanied by a blog (you can use it forever you want of course).
+https://www.jannikbuschke.de/gatsby-antd-docs/
