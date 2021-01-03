@@ -56,16 +56,45 @@
     color: $color-text;
   }
 
-  dl.box {
+  %ex-box {
     background-color: $color-bg-light;
     border-radius: 4px;
     padding: 16px;
+  }
+  dl.box {
+    @extend %ex-box;
     dt {
       font-weight: bold;
     }
     > dd {
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+  }
+
+  dl.box-label {
+    dt {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    > dd {
+      @extend %ex-box;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      ul,
+      ol {
+        padding-left: 0;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        li {
+          list-style: none;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
       }
     }
   }
