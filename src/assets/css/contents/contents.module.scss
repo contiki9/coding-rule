@@ -4,6 +4,7 @@
   h2,
   h3 {
     color: $color-text;
+    font-weight: bold;
   }
   h1 {
     font-size: 32px;
@@ -15,9 +16,12 @@
     font-size: 26px;
     margin-top: 8 * 4px;
     margin-bottom: 8 * 2px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $color-border;
   }
 
   h3 {
+    font-size: 20px;
     margin-top: 8 * 4px;
     margin-bottom: 8 * 2px;
   }
@@ -68,6 +72,7 @@
     @extend %ex-box;
     dt {
       font-weight: bold;
+      color: $color-text;
     }
     > dd {
       &:last-child {
@@ -80,6 +85,7 @@
     dt {
       font-weight: bold;
       font-size: 18px;
+      color: $color-text;
     }
     > dd {
       @extend %ex-box;
@@ -110,4 +116,9 @@
     color: #fff;
     border-radius: 4px;
   }
+}
+:not(pre) > code[class*='language-'] {
+  margin-right: 0.3em;
+  margin-left: 0.3em;
+  color: $color-error;
 }

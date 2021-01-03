@@ -21,4 +21,15 @@ $_menu-bg-active: darken($color-bg-light, 2);
   .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
     background: $_menu-bg-active;
   }
+
+  .ant-alert-success {
+    .ant-alert-message {
+      color: $color-success;
+    }
+  }
+  .ant-alert-error {
+    .ant-alert-message {
+      color: $color-error;
+    }
+  }
 }
