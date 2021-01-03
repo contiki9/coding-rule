@@ -85,6 +85,23 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-antd',
+      options: {
+        style: true
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-less',
+      options: {
+        lessOptions: {
+          modifyVars: {
+            'primary-color': '#1666F8',
+          },
+          javascriptEnabled: true,
+        },
+      },
+    },
     `gatsby-plugin-remove-trailing-slashes`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline

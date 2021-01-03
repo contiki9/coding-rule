@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Card from 'antd/lib/card'
-import 'antd/lib/card/style/css'
+//import 'antd/lib/card/style/css'
 
 export const PostCard = ({ post }) => (
   <div>

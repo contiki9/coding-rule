@@ -7,6 +7,7 @@ import { Layout } from 'antd';
 import { Sidebar } from './sidebar/index';
 import { TableOfContents } from './TableOfContents';
 
+import 'antd/lib/style/themes/default.less';
 import './assets/css/style.scss';
 import styleContent from './assets/css/contents/contents.module.scss';
 const { Sider, Content } = Layout;

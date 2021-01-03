@@ -2,12 +2,29 @@
 $_sidebar-bg: $color-bg-xlight;
 $_sidebar-bg-active: darken($color-bg-light, 2);
 $_sidebar-title: $color-text-light;
+$_sidebar-link: $color-primary;
 .menu_bg {
   background: $_sidebar-bg;
   :global {
     .ant-menu-submenu-title {
       color: $_sidebar-title;
     }
+    .ant-menu-item-selected a,
+    .ant-menu-item-selected a:hover,
+    .ant-menu-item a:hover,
+    .ant-menu-submenu:hover
+      > .ant-menu-submenu-title
+      > .ant-menu-submenu-expand-icon,
+    .ant-menu-submenu:hover
+      > .ant-menu-submenu-title
+      > .ant-menu-submenu-arrow {
+      color: $_sidebar-link;
+    }
+    .ant-menu-item:active,
+    .ant-menu-submenu-title:active {
+      background: $_sidebar-bg-active;
+    }
+
     .ant-menu-item {
       margin-top: 0 !important;
       margin-bottom: 0 !important;
