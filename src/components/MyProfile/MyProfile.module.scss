@@ -1,0 +1,33 @@
+@import '../../assets/css/variable';
+
+.profileBox {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 8 * 3px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px 0px rgba(89, 89, 99, 0.013),
+    0 2px 12px 0px rgba(89, 89, 99, 0.1);
+}
+.profileBoxUserWrap {
+  display: flex;
+  align-items: center;
+}
+.userImage {
+  height: 64px;
+  width: 64px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.userName {
+  font-size: 18px;
+}
+.userAbout {
+  font-size: 12px;
+  color: $color-text-light;
+}
+.userDescription {
+  font-size: 14px;
+  color: $color-text-light;
+  margin-bottom: 0;
+}
